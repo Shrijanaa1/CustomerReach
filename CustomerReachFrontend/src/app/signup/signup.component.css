@@ -1,0 +1,147 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.container {
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 100px auto;
+  }
+  
+  .wrapper {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .title {
+    height: 90px;
+    background: rgb(14, 130, 169);
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper form {
+    padding: 30px 25px 25px 25px;
+  }
+  
+  .wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  form .row input:focus {
+    border-color: rgb(14, 130, 169);
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+  }
+  
+  form .row input::placeholder {
+    color: #999;
+  }
+  
+  .wrapper form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: rgb(14, 130, 169);
+    border: 1px solid rgb(14, 130, 169);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper form .button input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: rgb(14, 130, 169);
+    border: 1px solid rgb(14, 130, 169);
+    cursor: pointer;
+  }
+  
+  .btn {
+    color: #fff;
+    background: rgb(14, 130, 169);
+  }
+  
+  form .button input:hover {
+    background: rgb(30, 160, 203);
+  }
+  
+  .wrapper form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  
+  .wrapper form .signup-link a {
+    color: rgb(14, 130, 169);
+    text-decoration: none;
+  }
+  
+  form .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .wrapper .row .abc{
+    color: red;
+  }
+
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+.footer {
+  padding: 14px;
+  position: fixed;
+}
+
+.test{
+  color: red;
+}
+/* Custom styles for center alignment and border around the form */
+
+
+.form-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  max-width: 400px; /* Optional: You can set a maximum width for the form box */
+}
+
+

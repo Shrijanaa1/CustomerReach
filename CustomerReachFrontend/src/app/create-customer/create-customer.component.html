@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="col-md-6 offset-md-3">
+
+    <h3 style="text-align: center;"> Create Customer </h3>
+
+        <form (ngSubmit) = "OnSubmit()" >
+
+            <div class="form-group mt-2">
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" id="username" [(ngModel)] = "customer.username" />
+            </div>
+
+            <div class="form-group mt-2">
+                <label>Email:</label>
+                <input type="text" class="form-control" id="email" [(ngModel)] = "customer.email" name="email">
+            </div>
+
+            <div class="form-group mt-2">
+              <label>Password:</label>
+              <input type="password" class="form-control" id="password" [(ngModel)] = "customer.password" name="password">
+            </div>
+
+            <div class="form-group mt-2">
+              <label>Contact Number:</label>
+              <input type="number" class="form-control" id="contact" [(ngModel)] = "customer.contact" name="contact">
+            </div>
+
+            <div class="form-group mt-2">
+              <label>Address:</label>
+              <input type="address" class="form-control" id="address" [(ngModel)] = "customer.address" name="address">
+            </div>
+
+            <button class="btn btn-success mt-2" type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    
+
+<app-footer></app-footer>

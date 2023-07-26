@@ -1,0 +1,50 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+
+.home {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .btn-primary {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  img {
+    max-width: 100%;  
+    
+  }
+}
+
+.footer {
+  padding: 14px;
+  position: fixed;
+}
+

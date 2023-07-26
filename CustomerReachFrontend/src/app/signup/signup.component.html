@@ -1,0 +1,42 @@
+<nav class="navbar bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" routerLink="/" routerLinkActive="active">
+        <img src="assets/ico.jpg" alt="Logo" width="30" height="30" class="me-2">
+        CustomerReach
+      </a>
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a  routerLink="/login" routerLinkActive="active" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a  routerLink="/signup" routerLinkActive="active" class="nav-link">Register</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+
+  <div class="container form-box">
+    <h2 style="text-align: center;">Register</h2>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="user.name" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" [(ngModel)]="user.email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="user.password" class="form-control">
+    </div>
+    <div style="text-align: center;">
+      <button class="btn btn-primary mt-2" (click)="register()">Register</button>
+    </div>
+    
+    <p *ngIf="message">{{ message }}</p>
+  </div>
+  
+  <app-footer></app-footer>
+
+  

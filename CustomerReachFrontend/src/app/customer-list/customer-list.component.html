@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+<h2>Customer List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>Email</th>
+            <!-- <th>Password</th> -->
+            <th>Contact</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ngFor used to iterate over list of customer -->
+        <!-- customers is arrray we define in component.. we are iterating over Customer array -->
+        <tr *ngFor = "let customer of customers" >
+            
+            <!-- <td> {{ customer.fname }} </td> -->
+            <td> {{ customer.username }} </td>
+            <td> {{ customer.email }} </td>
+            <!-- <td> {{ customer.password }} </td> -->
+            <td> {{ customer.contact }} </td>
+            <td> {{ customer.address }} </td>
+            <td>
+                <button (click) = "viewCustomer(customer.id)" class="btn btn-success">View</button>
+                <button (click) = "updateCustomer(customer.id)" class="btn btn-primary" style="margin-left: 10px;">Update</button>
+                <button (click) = "deleteCustomer(customer.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+            </td>
+        
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<app-footer></app-footer>
